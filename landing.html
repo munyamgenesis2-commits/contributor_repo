@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f7f8fb;
+    }
+    header {
+      background: #2f3e95;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #4a6be8 0%, #7bb7ff 100%);
+      color: white;
+    }
+    .hero h2 {
+      margin: 0 0 20px;
+      font-size: 3rem;
+      line-height: 1.1;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+    .hero .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #ffb347;
+      color: #1f2140;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .features {
+      display: grid;
+      gap: 24px;
+      max-width: 1040px;
+      margin: 40px auto;
+      padding: 0 24px 40px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .feature-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 18px 40px rgba(39, 63, 110, 0.08);
+    }
+    .feature-card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    .feature-card p {
+      margin: 14px 0 0;
+      line-height: 1.6;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      color: #777;
+      font-size: 0.95rem;
+      border-top: 1px solid #e2e6ef;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LandingPage</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Build something great with a clean and modern landing page.</h2>
+    <p>Simple, responsive, and easy to customize. Launch a polished product page fast with a friendly design that works on every device.</p>
+    <a class="cta" href="#features">Get Started</a>
+  </section>
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Responsive Layout</h3>
+      <p>Designed to look great on mobile, tablet, and desktop without extra effort.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Fast Performance</h3>
+      <p>Minimal markup and clean styling help keep load times low and interactions smooth.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Customizable</h3>
+      <p>Easily adapt colors, typography, and content to match your brand or product.</p>
+    </div>
+  </section>
+  <footer id="contact">
+    <p >Ready to launch? Contact us to make your idea a reality.</p>
+  </footer>
+</body>
+</html>
